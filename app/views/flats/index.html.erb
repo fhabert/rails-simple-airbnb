@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="text-center">Welcome to our simple airbnb</h1>
+    <h2 class="text-center">Here are our <%= @counter %> flats</h2>
+    <div class="cards-flat mt-5">
+        <% @flats.each do |flat| %>
+            <div class="card-flat" style="width: 400px;">
+                <div class="main-part-card">
+                    <img src="<%= flat.url%>" class="card-img-top" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= flat.name %></h5>
+                        <p><%= flat.address %></p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p><%= flat.price_per_night %> $</p>
+                            <p><%= flat.number_of_guests %></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="infos-card p-3 d-flex align-items-center justify-content-between">
+                    <div><%= link_to "More info", flat_path(flat), class: "btn-rounder" %></div>
+                    <div>
+                        <%= link_to "Edit", edit_flat_path(flat), class: "btn-rounder" %>
+                        <%= link_to "Destroy", flat_path(flat), class: "btn-rounder", method: :delete %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

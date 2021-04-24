@@ -1,0 +1,61 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+h1 {
+    font-size: 46px;
+    color: #494C6F;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 32px;
+    color: #595D88;
+}
+.cards-flat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+}
+.card-flat {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.main-part-card {
+    background-color: #F3F3F7;
+}
+.background-show {
+    background-image: url('https://images.unsplash.com/photo-1519227355453-8f982e425321?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1789&q=80');
+    height: 500px;
+    background-position: center;
+    background-position: center;
+    background-size: cover; 
+}
+.card-show {
+    background-color: #F3F3F7;
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: 0 5px 10px rgab(0,0,0,0.4);
+}
+.infos-intro {
+    position: absolute;
+    margin-top: 430px;
+}
+.card-add-flat {
+    width: 700px;
+    background-color: #F3F3F7;
+}
+.infos-card a {
+    text-decoration: none;
+}
+.btn-rounder {
+    border: 1px solid #494C6F;
+    background-color: white;
+    color: #494C6F;
+    padding: 5px 10px;
+    border-radius: 8px;
+    &:hover {
+        background-color: #494C6F;
+        color: white;
+        transition-delay: 150ms;
+        transition-duration: 100ms;
+    }
+}

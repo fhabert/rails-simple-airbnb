@@ -1,0 +1,18 @@
+<div class="container card-add-flat">
+    <h1 class="text-center">New Flat</h1>
+    <%= form_for (@flat) do |f| %>
+        <%= f.label :name, "Name" %>
+        <%= f.text_field :name, class: "form-control mb-2" %>
+        <%= f.label :address, "Address" %>
+        <%= f.text_field :address, class: "form-control mb-2" %>
+        <%= f.label :description, "Description" %>
+        <%= f.text_area :description, class: "form-control mb-2" %>
+        <%= f.label :price_per_night, "Price"%>
+        <%= f.text_field :price_per_night, class: "form-control mb-2", type: "number"  %>
+        <%= f.label :number_of_guests, "Guestes" %>
+        <%= f.text_field :number_of_guests, class: "form-control mb-2", type: "number" %>
+        <%= f.label :url, "Url" %>
+        <%= f.text_field :url, class: "form-control mb-2" %>
+        <%= f.submit class: "btn btn-primary mb-2" %>
+    <% end %>
+</div>

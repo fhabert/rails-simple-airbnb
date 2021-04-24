@@ -1,0 +1,37 @@
+<div class="banner">
+    <div class="background-show d-flex justify-content-around align-items-center">
+        <div class="infos-intro d-flex justify-content-around align-items-center">
+            <div class="infos-card">
+                <div class="card-show">
+                    <h3><%= @flat.name %></h3>
+                    <p><%= @flat.address %></p>
+                </div>
+                <div class="card-show mt-3">
+                    <h3>A bit more about this flat..</h3>
+                    <p><%= @flat.description %></p>
+                </div>
+            </div>
+            <div class="infos-rent mx-5">
+                <div class="card-show">
+                    <h4>Book this place!</h4>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">From:</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="14/07/2021">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">To:</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="24/07/2021">
+                    </div>
+                    <button class="btn btn-success">Submit</button>
+                </div>
+                <div class="card-show  mt-5">
+                    <h4>Details</h4>
+                    <div class="d-flex">
+                        <p style="margin-right: 20px;"><i class="fas fa-user-alt"></i><%= @flat.number_of_guests %></p>
+                        <p><i class="fas fa-euro-sign"></i><%= @flat.price_per_night %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
